@@ -1,0 +1,11 @@
+{
+"steam":{
+	"username": "rust_plus_bot_4" ,
+	"password": "Rustplus4" ,
+	"shared_secret": "6TtUXvqHpv7E5XZdSx/aAtWF7sE=",
+	"secret":"plVuc2mhP0di/hpChVtGcgV38Ik="
+	},
+	"apiKey":"2DFDB824F9CE1EFFDB027FD31B92AF07",
+	"admins":["76561198092400316"],
+  "port":3000
+}

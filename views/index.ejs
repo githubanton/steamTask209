@@ -1,0 +1,1063 @@
+<!doctype html>
+<html ng-app="app">
+   <head>
+      <meta charset="utf-8">
+      <title>withdraw test</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+      <script src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	  <!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
+<!-- fa icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--
+    RTL version
+-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.rtl.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.rtl.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.rtl.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.rtl.min.css"/>
+
+<script src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+<style>
+
+ ::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,00);
+	border-radius: 10px;
+	background: rgba(0,0,0,0.05);
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background: rgba(0,0,0,0.05);
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background: rgba(255,255,255,0.15);
+}
+
+         nav{
+         position: fixed !important;
+         top: 0;
+         z-index: 2;
+         width: 100%;
+		 background: #24252f;
+         }
+
+		 .modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+		color: #ccc;
+    padding: 1rem;
+	background: #13141b !important;
+}
+.swal-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+}
+.swal-modal {
+    width: 478px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #242628;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(1);
+    color: #fff;
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10001;
+    transition: opacity .2s,-webkit-transform .3s;
+    transition: transform .3s,opacity .2s;
+    transition: transform .3s,opacity .2s,-webkit-transform .3s;
+}
+.swal-text {
+    font-size: 16px;
+    position: relative;
+    float: none;
+    line-height: normal;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    max-width: calc(100% - 20px);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+.modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+	color: #fff;
+		background: #0a0a0e !important;
+    padding: 1rem;
+    border-bottom: 0px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 0px solid #e9ecef;
+		background: #13141b !important;
+}
+
+         .items{
+         margin-top:55px;
+         margin-right:300px;
+         position:;
+         }
+         .cart{
+		background: #13141b;
+		margin-top: -936px;
+		width: 300px;
+		height: 100vh;
+		color: #919aa7;
+		right: 0;
+		position: fixed;
+		}
+         .selecteditem{
+         background: #13141b !important;
+         }
+         .itemid{
+         display:none;
+         }
+         .item{
+		 text-align: center;
+         width: 22%;
+		 border-radius: 2px;
+		/* background: grey; */
+		background: rgba(255,255,255,0.05);
+		margin: 10px;
+		padding: 20px;
+		float: left;
+		position: relative;
+		list-style: none;
+				 border-bottom: 4px solid orange;
+         }
+		 
+		          .itemx{
+		 text-align: center;
+         width: 22%;
+		 border-radius: 2px;
+		/* background: grey; */
+		background: rgba(255,255,255,0.05);
+		margin: 10px;
+		padding: 20px;
+		float: left;
+		position: relative;
+		list-style: none;
+				 border-bottom: 4px solid orange;
+         }
+		 
+		 
+		          .gcard {
+		height: 280px;
+		 border-radius: 2px;
+		/* background: grey; */
+		background: rgba(255,255,255,0.05);
+		margin: 10px;
+		padding: 20px;
+		float: left;
+		position: relative;
+		list-style: none;
+				 border-bottom: 4px solid orange;
+         }
+		 .item:hover{
+
+		background: rgba(0,0,0,0.2);
+
+         }
+		.itemx:hover{
+
+		background: rgba(0,0,0,0.2);
+
+         }
+         .itemimg{
+    width: 73%;
+    /* position: absolute; */
+    bottom: 0;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+         }
+		          .itemimg:hover{
+		animation: float 3s;
+		transition: .1s;
+		animation-iteration-count: 9999;
+         }
+         .itemprice{
+color: #fb5357;
+    background: #00000061;
+    bottom: 0;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 7px;
+         }
+
+         .itemname{
+		 postion: fixed;;
+    font-size: 12px;
+    color: #919aa7;
+    margin-top: 5px;
+	font-weight: bold;
+	margin-left: 10px;
+	text-align: center;
+	height: 50px;
+	padding-top: 3px;
+         }
+
+         .itemprices{
+color: #fb5357;
+    background: #00000061;
+    bottom: 0;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 7px;
+         }
+
+         .itemnames{
+		 postion: fixed;;
+    font-size: 12px;
+    color: #919aa7;
+    margin-top: 5px;
+	font-weight: bold;
+	margin-left: 10px;
+	text-align: center;
+	height: 50px;
+	padding-top: 3px;
+         }
+		 
+		 
+		 
+         .itemwear{
+         position:absolute;
+         left:10px;
+         bottom: 0;
+         }
+         .cartlist {
+         margin-top:40px;
+         height:80%;
+         overflow:auto;
+		 list-style: none;
+
+         }
+		  .cartitem {
+    margin-top: 5px;
+    height: 50px;
+    /* width: 100%; */
+    margin-left: -40px;
+        background: rgba(255,255,255,0.05);
+    list-style: none;
+	padding-left: 10px;
+	line-height: 50px;
+	border-left: 4px solid orange;
+	overflow: hidden;
+	font-size: 14px;
+         }
+		 .balhol {
+		 position: fixed;
+    margin-top: -10px;
+    height: 50px;
+    width: 100%;
+    margin-left: -40px;
+	text-align: center;
+    background: #0d0d11;
+	color: #fff;
+    list-style: none;
+	padding-left: 10px;
+	line-height: 50px;
+
+	overflow: hidden;
+         }
+		 .btn-primary {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+		 .btn-primary:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+.sendbtn {
+	right: 20px;
+    width: 260px;
+    margin: auto;
+    position: fixed;
+    height: 80px;
+    bottom: 20px;
+    background: ;
+    padding-bottom: 20px;
+    margin-top: -15px;
+}
+
+
+
+         .itemgameid{
+         display:none;
+         }
+         .unactive{
+         display:none;
+         }
+		 .unactivee{
+         display:none;
+         }
+		 .cardbuttons {
+		 background: red;
+		 height: 60px;
+		 width: 270px;
+		 margin-top: 5px;
+
+		 }
+
+
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px;
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
+
+
+#menubutton{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background:orange;
+	color: #fff;
+	border-radius: 5px;
+	cursor:pointer;
+}
+#menubutton:hover{
+	background:rgb(160, 107, 9);
+}
+.dropbtn {
+	float: right;
+    margin-left: 20px;
+    margin-right: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #13141b;
+    min-width: 100px;
+    z-index: 1;
+    top: 35px;
+    left: 19px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #000;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.menuBar{
+	margin-top: 88px;
+    margin-left: 50px;
+    margin-bottom: 23px;
+	width: 90%;
+}
+.buttonactive{
+border:1px solid red;
+}
+
+.GameItems{
+	margin-top: 20px;
+    overflow-y: scroll;
+    width: 99%;
+    height: 800px;
+}
+.addButton{
+
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: orange;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+
+}
+.trackButton{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: orange;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 3px;
+	margin-left:2%;
+}
+.hideme
+{
+    opacity:0;
+}
+
+.dropBtns{
+	cursor:pointer;
+	background-color: #1f2027;
+    color: #acacae;
+    border: 0;
+    padding: 12px;
+}
+.dropBtns:hover{
+	background-color: #040404;
+}
+.dropBtns:focus {
+	outline:0;
+}
+.submenu{
+	float: right;
+}
+.content{
+	width:91%;
+}
+.lihover{
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+}
+.lihover:hover{
+background:#50505d5e;
+    border-radius: 5px;
+    padding: 2px;
+}
+      </style>
+   </head>
+
+
+   
+   <body class="htmlNoPages" style="background-color: #1c1d24;">
+      <nav class="navbar navbar-dark bg-dark">
+         <a class="navbar-brand" href="#">Withdraw site</a>
+
+         <span class="navbar-text">
+
+
+			<b style="    color: #fb5357;
+    text-align: center;
+    /* margin-right: 40px; */
+    /* float: right; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    background: #1f2027;
+    /* margin-right: 0px; */
+    /* color: #fff; */
+    border-radius: 5px;
+    cursor: pointer;"><img style="width: 15px;margin-right: 5px;margin-top: -4px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gelber_Punkt.svg/240px-Gelber_Punkt.svg.png"><%= balance %></b>
+	   <a style="float: right;padding-left: 10px;padding-right: 10px;background:#1f2027;margin-right: 0px;color: #fff;border-radius: 5px;cursor:pointer;" href="/logout">Logout</a>
+	                   <span style="text-align=right;float:left;"><b style="float: right;padding-left: 10px;padding-right: 10px;background:#1f2027;margin-right: 10px;color: #fff;border-radius: 5px;cursor:pointer;" onclick="$('#tlink').modal('toggle')">Set Tradeurl</b></span></p>
+
+
+         </span>
+      </nav>
+      <div class="items" ng-controller="items">
+<!-- Modal -->
+<div class="modal fade" id="tlink" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Set Tradeurl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<form style="text-align: center;" class="ng-pristine ng-valid">
+  Tradelink: <input id="trade-url-data" style="background: #0a0a0e; color: #ccc; width: 80%;border: 0;padding: 5px;" type="text" name="tlink"><br>
+  <a style="color: orange;" target="_blank" href="https://steamcommunity.com/id/me/tradeoffers/privacy">Can be found here</a>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="trade-url" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="tradeModal">
+	<div class="modal-dialog" style="top:40%;">
+		<div class="modal-content">
+	<div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Alert</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+	  </div>
+      </form>
+
+		</div>
+	</div>
+</div>
+
+<div class="menuBar">
+   <b  ng-click="changegame(730)" id="menubutton" >CSGO</b>
+   <b  ng-click="changegame(578080)" id="menubutton" >PUBG</b>
+   <b  ng-click="changegame('gift')" id="menubutton" >Gift</b>	
+   	</div>
+	<div class="content">
+	<div class="submenu">
+<div class="dropdown">
+   <button type="button" id="filter-price" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropBtns"><span  class="filter-label">Price: High → Low</span> <span class="caret"></span></button> 
+   <ul class="dropdown-menu default-dropdown-menu left-arrow" style="background:#25252f;color:#99999c;cursor:pointer;">
+      <li class="lihover">
+		<a ng-click="setSort(1);">High → Low</a>
+	  </li>
+      <li class="lihover" ><a ng-click="setSort(2);">Low → High</a></li>
+   </ul>
+</div> 
+ 
+<div class="dropdown">
+   <button type="button" id="filter-priceRange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropBtns"><spanclass="filter-label">Price Range: Any</span> <span class="caret"></span></button> 
+   <ul aria-labelledby="filter-priceRange" class="dropdown-menu default-dropdown-menu to-right" style="background:#25252f;color:#99999c;cursor:pointer;">
+      <li class="lihover"><a  onclick="clearFilter();">Any</a></li>
+      <li class="lihover"><a  onclick="sortPrice('501')">500+</a></li>
+      <li class="lihover"><a  onclick="sortPrice('100-500')">100-500</a></li>
+      <li class="lihover"><a  onclick="sortPrice('25-100')">25-100</a></li>
+      <li class="lihover"><a  onclick="sortPrice('5-25')">5-25</a></li>
+      <li class="lihover"><a  onclick="sortPrice('0-5')">0-5</a></li>
+   </ul>
+</div>
+
+<div class="dropdown">
+   <button type="button" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropBtns"><spanclass="filter-label">All Qualities</span> <span class="caret"></span></button> 
+   <ul aria-labelledby="filter-quality" class="dropdown-menu default-dropdown-menu to-right" style="background:#25252f;color:#99999c;cursor:pointer;">
+      <li style="" class="lihover"><a  onclick="clearFilter();">All Qualities</a></li>
+      <li class="lihover"><a onclick="sortWear('Factory New')">Factory New</a></li>
+      <li class="lihover"><a onclick="sortWear('Minimal Wear')">Minimal Wear</a></li>
+      <li class="lihover" ><a onclick="sortWear('Field-Tested')">Field Tested</a></li>
+      <li class="lihover"><a onclick="sortWear('Well-Worn')">Well Worn</a></li>
+      <li class="lihover"><a onclick="sortWear('Battle-Scarred')">Battle Scarred</a></li>
+   </ul>
+</div>
+		 </div>
+</div>
+
+	 <input style="color:#acacae;outline:0;height: 49px;margin-left: 55px;background: rgb(31, 32, 39);width: 43%;border: 0;border-radius: 5px;padding: 10px;" type="text" name="Search" placeholder="Search..." ng-model="filter">
+	<div class="GameItems">
+    <ul data-ng-class="{'unactive': gameid == 'gift' || gameid == '578080'}">
+    	<span ng-repeat="item in response.CSGO | orderBy:getSort()" data-ng-class="{'selecteditem': selected[item.assetid] == 1, 'unactive': item.gameid != 730 , 'unactivee': item.name.toLowerCase().indexOf(filter.toLowerCase()) === -1}">
+    	  <li style="" data-ng-class="{'selecteditem': selected[item.assetid] == 1}"  class="item" >
+    			 <img class="itemimg" ng-src="{{item.url}}/360fx360f" >
+                   <p class="itemname">{{item.name}}</p>
+    			   <p class="itemwear">{{item.wear}}</p>
+                   <p class="itemid">{{item.assetid}}</p>
+                   <center><p class="itemprice"><img style="width: 15px;margin-right: 5px;margin-top: -4px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gelber_Punkt.svg/240px-Gelber_Punkt.svg.png">{{item.price}}$</p></center>
+                   <p class="itemgameid">{{item.gameid}}</p>
+                   <b ng-click="myFunc($event)" class="addButton">Add</b>
+                   <b class="trackButton">Track</b>
+    		</li>
+    	</span>
+    </ul>
+		 
+		 
+    <ul data-ng-class="{'unactive': gameid == '730' || gameid == 'gift'}">
+		<span ng-repeat="item in response.PUBG | orderBy:getSort()" data-ng-class="{'unactive': item.gameid != 578080 , 'unactivee': item.name.toLowerCase().indexOf(filter.toLowerCase()) === -1}">
+			<li style="" data-ng-class="{'selecteditem': selected[item.assetid] == 1}" class="itemx" >
+			   <img class="itemimg" ng-src="{{item.url}}" >
+               <p class="itemnames">{{item.name}}</p>
+			   <p class="itemwear">{{item.wear}}</p>
+               <p class="itemid">{{item.assetid}}</p>
+               <center><p class="itemprices"><img style="width: 15px;margin-right: 5px;margin-top: -4px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gelber_Punkt.svg/240px-Gelber_Punkt.svg.png">{{item.price}}$</p></center>
+               <p class="itemgameid">{{item.gameid}}</p>
+               <b ng-click="myFunc($event)" class="addButton">Add</b>
+               <b class="trackButton">Track</b>
+			</li>
+	   </span>
+    </ul>
+
+	<ul data-ng-class="{'unactive': gameid == '730' || gameid == '578080'}">
+         <li style="width: 270px;" class="item" ng-repeat="card in response.cards | orderBy:'-price'" ng-click="buyCard($event)" data-ng-class="{'selecteditem': selected[card.id] == 1}">
+         	<img style="width: 120px;" ng-src="{{card.url}}">
+               <p style="" class="itemid">{{card.id}}</p>
+               <p style="margin-top: 20px;padding-bottom: 10px;/* margin-left: 15px; */text-align:center;" class="itemname">{{card.name}}</p>
+               <center><p class="itemprice"><b><img style="width: 15px;margin-right: 5px;margin-top: -4px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gelber_Punkt.svg/240px-Gelber_Punkt.svg.png" />{{card.price}}</b></p></center>
+		<b class="addButton">Add</b>
+         <b  class="trackButton">Track</b>
+	    </li>
+		</ul>
+	</div>
+
+         <div class="cart">
+            <ul class="cartlist">
+             <a style=" margin-left: -10px; "> Selected Skins </a><a ng-click="removeAll($event)" style="cursor:pointer;text-decoration: none;color: #919aa7; margin-left: 45px; "> Remove All <i class="fa fa-times-circle"></i></i></a>
+			<hr>
+               <li class="cartitem" ng-repeat="item in cart" >
+                  <p>{{ item.name | limitTo:30}}{{item.name.length > 30 ? '...' : ''}}</p>
+				  <img style="width: 50px;height: 40px;margin-top: -60px;float: right;margin-right: 10px;border: 0;" ng-src="{{item.url}}" >
+
+               </li>
+            </ul>
+            <div class="sendbtn">
+            <p style="margin-top: -10px;width: 100%;color: #fff;background: rgba(255,255,255,0.05);height:50px;line-height: 50px;text-align:center;border-radius: 5px;cursor:pointer;">Selected: <img style="width: 15px;margin-right: 5px;margin-top: -4px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gelber_Punkt.svg/240px-Gelber_Punkt.svg.png"><b style="color: #fb5357;">{{ value / 100 }}</b></p>
+            <p style="margin-top: -10px;width: 100%;color: #fff;background: #fb5357;height:50px;line-height: 50px;text-align:center;border-radius: 5px;cursor:pointer;" ng-click="sendTrade($event)">Send offer</p>
+            </div>
+         </diV>
+      </div>
+      <script>
+function clearFilter(){
+var myarra = document.getElementsByClassName("itemname");
+var myarray = document.getElementsByClassName("itemprice");
+var gameID = document.getElementsByClassName("itemgameid");
+
+	for(e=0;e < myarra.length;e++){
+	if(gameID[e].innerText == "730"){
+		//show all items
+		$(document.getElementsByClassName("item")[e]).show()
+		//search wear in name
+		}
+	}
+ 	for(e=0;e < myarray.length;e++){
+ if(gameID[e].innerText == "730"){
+
+		$(document.getElementsByClassName("item")[e]).show()
+		}
+	}
+}	    
+
+function sortWear(name){
+var myarra = document.getElementsByClassName("itemname");
+var gameID = document.getElementsByClassName("itemgameid");
+var wear = "";
+	for(e=0;e < myarra.length;e++){
+	if(gameID[e].innerText == "730"){
+		//show all items
+		$(document.getElementsByClassName("item")[e]).show()
+		//search wear in name
+		if(/Factory New/g.exec(myarra[e].innerText)){
+			wear = "Factory New"
+		}else if(/Minimal Wear/g.exec(myarra[e].innerText)){
+			wear = "Minimal Wear"
+		}else if(/Field-Tested/g.exec(myarra[e].innerText)){
+			wear = "Field-Tested"
+		}else if(/Well-Worn/g.exec(myarra[e].innerText)){
+			wear = "Well-Worn"
+		}else if(/Battle-Scarred/g.exec(myarra[e].innerText)){
+			wear = "Battle-Scarred"
+    }else{
+			wear = "none";
+	}
+	//hide item if is not the same as choosen
+		if(name !== wear){
+		$(document.getElementsByClassName("item")[e]).hide()
+		}
+	  }
+	}
+ 
+}
+//remove all the text and dollar sign
+function onlynumber(str) {
+    return NumberOnly(str.toString().replace(/^\s+|\s+$/g,''));
+}
+//Remove dollar sign
+function NumberOnly(str) {
+    return str.replace("$", "");
+}
+//sort price function (per range)
+function sortPrice(range){
+var myarra = document.getElementsByClassName("itemprice");
+var myarray = document.getElementsByClassName("itemprices");
+var PriceRange = "";
+if(localStorage.gameID == "730"){
+	for(e=0;e < myarra.length;e++){
+		//show all items
+		$(document.getElementsByClassName("item")[e]).show()
+		//search wear in name
+		if(onlynumber(myarra[e].innerText) > 0 && onlynumber(myarra[e].innerText) < 5){
+			PriceRange = "0-5";
+		} else if(onlynumber(myarra[e].innerText) > 5 && onlynumber(myarra[e].innerText) < 25){
+		    PriceRange = "5-25";
+		} else if(onlynumber(myarra[e].innerText) > 25 && onlynumber(myarra[e].innerText) < 100){
+		    PriceRange = "25-100";
+		} else if(onlynumber(myarra[e].innerText) > 100 && onlynumber(myarra[e].innerText) < 500){
+		    PriceRange = "100-500";
+		} else if(onlynumber(myarra[e].innerText) > 500){
+		    PriceRange = "+500";
+		}
+	//hide item if is not the same as choosen
+		if(range !== PriceRange){
+		$(document.getElementsByClassName("item")[e]).hide()
+		}
+		console.log("csgo");
+
+  }
+  
+  	}else if(localStorage.gameID == "578080"){
+	
+	for(e=0;e < myarray.length;e++){
+		//show all items
+		$(document.getElementsByClassName("itemx")[e]).show()
+		//search wear in name
+		if(onlynumber(myarray[e].innerText) > 0 && onlynumber(myarray[e].innerText) < 5){
+			PriceRange = "0-5";
+		} else if(onlynumber(myarray[e].innerText) > 5 && onlynumber(myarray[e].innerText) < 25){
+		    PriceRange = "5-25";
+		} else if(onlynumber(myarray[e].innerText) > 25 && onlynumber(myarray[e].innerText) < 100){
+		    PriceRange = "25-100";
+		} else if(onlynumber(myarray[e].innerText) > 100 && onlynumber(myarray[e].innerText) < 500){
+		    PriceRange = "100-500";
+		} else if(onlynumber(myarray[e].innerText) > 500){
+		    PriceRange = "+500";
+		}
+	//hide item if is not the same as choosen
+		if(range !== PriceRange){
+		$(document.getElementsByClassName("itemx")[e]).hide()
+		}
+		console.log("pubg");
+
+	}
+  }
+}
+
+$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').focus()
+})
+
+function fn(text, count){
+    return text.slice(0, count) + (text.length > count ? "..." : "");
+}
+
+$('#trade-url').click(function() {
+        var td = $('#trade-url-data').val();
+        if(!td.includes('://') || td == '')
+        {
+            $.notify('Error: Tradelink cannot be empty!', 'success');
+        }
+        else
+        {
+            $.ajax({
+                url: 'settlink?tlink=' + encodeURIComponent(td)
+            });
+            $('#tlink').modal('hide');
+        }
+});
+
+
+$(".menuBar #menubutton").click(function() {
+  $(".menuBar #menubutton").css('background-color', 'orange');
+  $(this).css('background-color', '#a06b09');
+});
+
+
+$('#trade-url').on("click",function(){
+  console.log("clicked");
+  if (typeof(Storage) !== "undefined") {
+    localStorage.setItem("tradeurl", $('#trade-url-data').val());
+}
+});
+ var selected = [];
+ var socket = io();
+ socket.on("msg", function(data) {
+     console.log(data);
+     $.notify(data, "success");
+ });
+ //socket.on('items', function(data){
+ var app = angular.module('app', []);
+
+ app.controller('items', function($scope) {
+     $scope.sortDir = true;
+	 $scope.sortWear = "";
+	 $scope.response = {};
+	 //CSGO
+     socket.on('CSGOinv', function(data) {
+         $scope.$apply(function() {
+             $scope.response.CSGO = data;
+         });
+     })
+	 //PUBG
+    socket.on('PUBGinv', function(data) {
+         $scope.$apply(function() {
+             $scope.response.PUBG = data;
+         });
+     })
+	 //CARDS
+     socket.on('cards', function(data) {
+         $scope.$apply(function() {
+             $scope.response.cards = data;
+         });
+     })
+     $scope.setSort = function(val){
+       if(val == 1){
+         $scope.sortDir = true;
+       }else{
+         $scope.sortDir = false;
+       }
+    };
+    $scope.getSort = function(){
+     if($scope.sortDir){
+       return '-price';
+     }
+     return '+price';
+
+   };
+	localStorage.gameID = '730';
+     $scope.filter = '';
+	 $scope.gameid = 730;
+     $scope.selected = {};
+     $scope.cart = [];
+	 $scope.value = 0;
+	 $scope.changegame = function(id) {
+	 	$scope.selected = {};
+     	$scope.cart = [];
+		$scope.value = 0;
+	 	$scope.gameid = id;
+	    localStorage.gameID = id;
+	 }
+
+     $scope.myFunc = function($event) {
+       console.log("entered");
+       if(localStorage.getItem("tradeurl") === null){
+	   $('#tlink').modal('toggle')
+         return;
+       }
+     	console.log("Current event: " + $event.currentTarget.parentElement.childNodes[1].currentSrc); //
+         if (!$scope.selected[$event.currentTarget.parentElement.childNodes[7].innerText]) {
+         	$scope.value += ($event.currentTarget.parentElement.childNodes[9].innerText.replace("$", "")*100);
+             $scope.selected[$event.currentTarget.parentElement.childNodes[7].innerText] = 1;
+            $scope.cart.push({url: $event.currentTarget.parentElement.childNodes[1].currentSrc, id: $event.currentTarget.parentElement.childNodes[7].innerText, name: $event.currentTarget.parentElement.childNodes[3].innerText});
+         } else {
+        	 $scope.value -= ($event.currentTarget.parentElement.childNodes[9].innerText.replace("$", "")*100);
+
+             var cart = [];
+             for(item in $scope.cart){
+             	console.log(item);
+             	if($scope.cart[item].id === $event.currentTarget.parentElement.childNodes[7].innerText){
+
+             	}else{
+             		cart.push($scope.cart[item]);
+             	}
+             }
+            $scope.cart = cart;
+            delete $scope.selected[$event.currentTarget.parentElement.childNodes[7].innerText];
+         }
+         //$scope.value
+         console.log($scope.cart);
+     };
+
+     $scope.removeAll = function($event) {
+
+             for(item in $scope.cart){
+               $scope.selected[$scope.cart[item].id] = 0;
+             }
+        $scope.cart = [];
+        $scope.value = 0;
+     };
+
+     $scope.buyCard = function($event) {
+     console.log($event.currentTarget.childNodes);
+     $.post( "http://localhost:3000/cardstatus", $event.currentTarget.childNodes[3].innerText)
+ 				 .done(function( data ) {
+ 				 if(data === '1'){
+				 swal("Error!", "An error occured! please try again", "error" );
+ 				 }
+ 				 if(data === '2'){
+				 swal("Error!", "This card is already sold! We are sorry", "error" );
+ 				 }
+ 				 if(data === '3'){
+ 	swal({
+  title: "Your about to buy a steam Giftcard!",
+  text: "You are about to buy a Steamgift card,This code will only be shown once, so save it!",
+  icon: "warning",
+    buttons: true,
+   showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Confirm!'
+}).then(function(test){
+			if(test == true){
+			txt = "You pressed OK!";
+					 $.post( "http://localhost:3000/buycard", $event.currentTarget.childNodes[3].innerText).done(function( data ) {
+							 $('#tradeModal').modal();
+                             $('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> '+data+'</p><hr>');
+					 });
+			}else{
+				   swal("You Canceled!", "You canceled the proccess, no funds have been deducted from you account", "error" );
+			}
+		});
+        }
+	});
+};
+
+
+
+     //TODO:send offer trough http to the server
+      $scope.sendTrade = function() {
+      		console.log($scope.cart);
+			if(Object.keys($scope.selected).length > 8){
+
+				$('#tradeModal').modal();
+				$('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> You can only withdraw 8 items at once</a></p><hr>');
+
+			}else{
+			$('#tradeModal').modal();
+            $('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> Processing tradeoffer</a></p><hr>');
+
+            $.post( "http://localhost:3000/send", $scope.selected)
+ 				 .done(function( data )
+				 {
+                   console.log(data);
+				   if(data == "You have not enough balance"){
+				   	$('#tradeModal').modal();
+                    $('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> You have not enough balance</p><hr>');
+
+				    }else{
+					   $('#tradeModal').modal();
+					    $('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> Confirming trade offer...</a></p><hr>');
+					   setTimeout(function(){ $('#tradeModal .modal-body').html('<p style="font-weight: bold;" id="myModalLabel" class="tradeAlert modal-title alert text-center"><i class="fa fa-spinner fa-spin"></i> Trade offer sent, <a target="_blank" href="'+ data +'">accept the trade offer</a></p><hr>'); }, 5000);
+					}
+				});
+			}
+     };
+
+
+ });
+ //});
+ socket.emit("steamid", "<%= steamid %>");
+      </script>
+	  <script>
+function CustomAlert(){
+    this.render = function(dialog){
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var dialogoverlay = document.getElementById('dialogoverlay');
+        var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.display = "block";
+        dialogoverlay.style.height = winH+"px";
+        dialogbox.style.left = (winW/2) - (550 * .5)+"px";
+        dialogbox.style.top = "100px";
+        dialogbox.style.display = "block";
+        document.getElementById('dialogboxhead').innerHTML = "Acknowledge This Message";
+        document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+    }
+	this.ok = function(){
+		document.getElementById('dialogbox').style.display = "none";
+		document.getElementById('dialogoverlay').style.display = "none";
+	}
+}
+var Alert = new CustomAlert();
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   </body>
+</html>

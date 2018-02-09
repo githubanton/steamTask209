@@ -1,0 +1,1194 @@
+PXR94
+Tue, 30 Jan 2018 22:14:56 GMT body-parser deprecated undefined extended: provide extended option at steambot.js:51:17
+listening on *:3000
+[MYSQL] Connected!
+Logged into Steam as [U:1:481598505]
+connectednilPE4_XqBlatAWyAAAA
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 25,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+disconnectednilPE4_XqBlatAWyAAAA
+connectedFqqCP5_Fw2VnAPWNAAAB
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 26,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 27,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 28,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 29,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 30,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+disconnectedFqqCP5_Fw2VnAPWNAAAB
+connectedbptLtYM71ygNubRlAAAC
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 31,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 32,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 33,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 34,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 35,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+Failed to get user details for undefined
+Error: Trade Offers can only be sent to friends.  ✪ Krønøs is not on your Steam friends list.
+disconnectedbptLtYM71ygNubRlAAAC
+connectedgUBlNj2hRMuK3Ti5AAAD
+a user connected
+disconnectedgUBlNj2hRMuK3Ti5AAAD
+connectedgiwxpnZ2C_VIXRPsAAAE
+a user connected
+disconnectedgiwxpnZ2C_VIXRPsAAAE
+connectedH4dsgXTjY2MH5uN4AAAF
+a user connected
+disconnectedH4dsgXTjY2MH5uN4AAAF
+connectedkpkjHuZzDerZwzoBAAAG
+a user connected
+disconnectedkpkjHuZzDerZwzoBAAAG
+connectedgPC3QtdsIUwRlBM5AAAH
+a user connected
+disconnectedgPC3QtdsIUwRlBM5AAAH
+connectedLfiTPxDfKaSUe2tqAAAI
+a user connected
+disconnectedLfiTPxDfKaSUe2tqAAAI
+connectedn5q0Is6ET9xlVF0PAAAJ
+a user connected
+disconnectedn5q0Is6ET9xlVF0PAAAJ
+connectedMfYIN0CqnqBmqvp4AAAK
+a user connected
+disconnectedMfYIN0CqnqBmqvp4AAAK
+connected48SEMyVjAEXDFK0gAAAL
+a user connected
+disconnected48SEMyVjAEXDFK0gAAAL
+connectedx6364MFaix1yOTqLAAAM
+a user connected
+connectedEpxrbXL6GwXhprmvAAAN
+a user connected
+disconnectedEpxrbXL6GwXhprmvAAAN
+connectedQUi7Ajid5xvyBhIdAAAO
+a user connected
+disconnectedx6364MFaix1yOTqLAAAM
+connected7rAX16bMf0PXdYXjAAAP
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 100,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 36,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502921': '1' }
+730 730
+100 0.46
+all items added
+pending
+offerid: 2926372716
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+connectedQxuTzYiO4ArODIk4AAAQ
+a user connected
+disconnectedQxuTzYiO4ArODIk4AAAQ
+connectedJn2lHzSDdajV5OOoAAAR
+a user connected
+disconnectedQUi7Ajid5xvyBhIdAAAO
+disconnected7rAX16bMf0PXdYXjAAAP
+connectediabQjgAroRYAJmdvAAAS
+a user connected
+connectedQlM4g2AbhpkvGzoLAAAT
+a user connected
+disconnectedJn2lHzSDdajV5OOoAAAR
+disconnectediabQjgAroRYAJmdvAAAS
+connectedWQdXsdTJOQuqijS3AAAU
+a user connected
+disconnectedQlM4g2AbhpkvGzoLAAAT
+connected5FJcRsUMhFVsobMxAAAV
+a user connected
+disconnectedWQdXsdTJOQuqijS3AAAU
+connected1ne3e61vz4C4uKIwAAAW
+a user connected
+disconnected1ne3e61vz4C4uKIwAAAW
+connectedSlOT4B7Z56L86IrXAAAX
+a user connected
+connectedR0Iqbj_0B9e-sIAZAAAY
+a user connected
+disconnectedSlOT4B7Z56L86IrXAAAX
+connectedr6qH0g3dt0NfnvDxAAAZ
+a user connected
+{ '1': '' }
+{ '1': '' }
+{ '1': '' }
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 37,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: '' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 38,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+{ '1': '' }
+{ '1': '' }
+disconnectedr6qH0g3dt0NfnvDxAAAZ
+connectedhVo08NOG8lNHlxlNAAAa
+a user connected
+connectedhEU2-v-dPnx89bXnAAAb
+a user connected
+disconnectedhVo08NOG8lNHlxlNAAAa
+connectedOJ0NO6WwLxw9dS6tAAAc
+a user connected
+{ '1': '' }
+{ '1': '' }
+disconnectedR0Iqbj_0B9e-sIAZAAAY
+connectedKXGTe7DGJst-X9TbAAAd
+a user connected
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 39,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 40,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 41,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 42,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 43,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+disconnectedOJ0NO6WwLxw9dS6tAAAc
+connectedAbT_nPOGzwYUtRTrAAAe
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 300,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 44,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502750': '1' }
+730 730
+300 0.11
+all items added
+pending
+offerid: 2926401284
+disconnectedAbT_nPOGzwYUtRTrAAAe
+connectedr_QTHLHb_tuNKEFSAAAf
+a user connected
+disconnectedr_QTHLHb_tuNKEFSAAAf
+connectedaToCWOY1tDlk7jKiAAAg
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 299.89,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 45,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502714': '1' }
+730 730
+299.89 0.09
+all items added
+pending
+offerid: 2926402835
+disconnectedaToCWOY1tDlk7jKiAAAg
+connectedcJ9tUOGXSTtkdC2OAAAh
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 46,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502660': '1' }
+730 730
+0 0.03
+disconnectedcJ9tUOGXSTtkdC2OAAAh
+connected4oROA8za08eUMVM8AAAi
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 47,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502790': '1' }
+730 730
+0 0.03
+disconnectedKXGTe7DGJst-X9TbAAAd
+connecteda5kTKzYyh1bHGQE8AAAj
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 100,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 48,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502660': '1' }
+730 730
+100 0.03
+all items added
+disconnectedhEU2-v-dPnx89bXnAAAb
+pending
+offerid: 2926409923
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 49,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+connected3M0psAhK3qhw7fL_AAAk
+a user connected
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 50,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 51,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 52,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+The request is a duplicate and the action has already occurred in the past, ignored this time
+disconnected3M0psAhK3qhw7fL_AAAk
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+disconnected4oROA8za08eUMVM8AAAi
+connectedNKdO5CqG_YYY2AA8AAAl
+a user connected
+connectedpTs_c7BV6wYJCjyBAAAm
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 99.97,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 53,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502563': '1' }
+730 730
+99.97 0.03
+all items added
+pending
+offerid: 2926411086
+disconnectedpTs_c7BV6wYJCjyBAAAm
+connectedjclaGZ90hIPnU906AAAn
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 54,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502612': '1' }
+730 730
+0 0.03
+disconnectedNKdO5CqG_YYY2AA8AAAl
+disconnectedjclaGZ90hIPnU906AAAn
+connectedk3U1SMsie16RIwC1AAAo
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 1000,
+    tradetoken: 'qMzzs69i' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 55,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502849': '1' }
+730 730
+1000 0.08
+all items added
+pending
+offerid: 2926413451
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+disconnectedk3U1SMsie16RIwC1AAAo
+connectedFwFs7XagyiUNoeebAAAp
+a user connected
+disconnectedFwFs7XagyiUNoeebAAAp
+connectedMUy839aDl2dRrECZAAAq
+a user connected
+disconnectedMUy839aDl2dRrECZAAAq
+connectedoMZT_ezMHNdMyx8QAAAr
+a user connected
+disconnectedoMZT_ezMHNdMyx8QAAAr
+connectedZcHK5gq8o5nX5ePFAAAs
+a user connected
+disconnectedZcHK5gq8o5nX5ePFAAAs
+connected85gR6XOZRMS-eKb5AAAt
+a user connected
+disconnected85gR6XOZRMS-eKb5AAAt
+connectedhjEchVUhd5fXQNfEAAAu
+a user connected
+disconnectedhjEchVUhd5fXQNfEAAAu
+connectedztGhIl76JBIzi2unAAAv
+a user connected
+disconnectedztGhIl76JBIzi2unAAAv
+connectedIWy5A6iSPlMnGcy2AAAw
+a user connected
+disconnectedIWy5A6iSPlMnGcy2AAAw
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+TypeError: Cannot read property 'gameid' of undefined
+    at Query._callback (/root/steambot.js:126:213)
+    at Query.Sequence.end (/root/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+connectedYLqjQLLoB-xGOwFcAAAx
+a user connected
+disconnectedYLqjQLLoB-xGOwFcAAAx
+connected0rCS_prkntU1FADMAAAy
+a user connected
+disconnecteda5kTKzYyh1bHGQE8AAAj
+disconnected0rCS_prkntU1FADMAAAy
+connectedRnD7uw8OmOPUgctGAAAz
+a user connected
+disconnectedRnD7uw8OmOPUgctGAAAz
+connectedxBFQnWMB2tiaSNP0AAA0
+a user connected
+HTTP error 503
+Session expired.
+Trying the error login.
+disconnectedxBFQnWMB2tiaSNP0AAA0
+connectedQuxG9oPXei-2md8gAAA1
+a user connected
+Session expired.
+Trying the error login.
+Session expired.
+Trying the error login.
+Error: Cannot log onto steamcommunity.com without first being connected to Steam network
+    at SteamUser.webLogOn (/root/node_modules/steam-user/components/web.js:9:9)
+    at SteamCommunity.<anonymous> (/root/steambot.js:379:20)
+    at SteamCommunity.emit (events.js:160:13)
+    at SteamCommunity._notifySessionExpired (/root/node_modules/steamcommunity/components/http.js:85:7)
+    at /root/node_modules/steamcommunity/components/confirmations.js:21:10
+    at /root/node_modules/steamcommunity/components/confirmations.js:272:4
+    at SteamCommunity._checkHttpError (/root/node_modules/steamcommunity/components/http.js:90:3)
+    at Request._callback (/root/node_modules/steamcommunity/components/http.js:50:61)
+    at self.callback (/root/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:160:13)
+    at Request.init (/root/node_modules/request/request.js:455:17)
+    at Redirect.onResponse (/root/node_modules/request/lib/redirect.js:149:11)
+    at Request.onRequestResponse (/root/node_modules/request/request.js:990:22)
+    at ClientRequest.emit (events.js:160:13)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:548:21)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:23)
+    at TLSSocket.socketOnData (_http_client.js:439:20)
+    at TLSSocket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at TLSSocket.Readable.push (_stream_readable.js:213:10)
+    at TLSWrap.onread (net.js:599:20)
+TypeError: Cannot read property 'getSteamID64' of null
+    at update_bot_invcsgo (/root/steambot.js:447:53)
+    at Timeout._onTimeout (/root/steambot.js:442:5)
+    at ontimeout (timers.js:458:11)
+    at tryOnTimeout (timers.js:296:5)
+    at Timer.listOnTimeout (timers.js:259:5)
+disconnectedQuxG9oPXei-2md8gAAA1
+connectedCu4ATO-hZHQ_ryCmAAA2
+a user connected
+Logged into Steam as [U:1:481598505]
+connectedVqx_0y-vaJ0Xxz6RAAA3
+a user connected
+disconnectedVqx_0y-vaJ0Xxz6RAAA3
+connectedUttCGiceuQOEJKcBAAA4
+a user connected
+disconnectedUttCGiceuQOEJKcBAAA4
+connectedHULF2GNqN0_vgSrNAAA5
+a user connected
+disconnectedCu4ATO-hZHQ_ryCmAAA2
+connecteddqNS_sk056VZvr8BAAA6
+a user connected
+disconnecteddqNS_sk056VZvr8BAAA6
+connecteddYgXm0FcMIQ0i7sUAAA7
+a user connected
+disconnecteddYgXm0FcMIQ0i7sUAAA7
+connectedZTLfqPOexYkDyfh8AAA8
+a user connected
+disconnectedHULF2GNqN0_vgSrNAAA5
+disconnectedZTLfqPOexYkDyfh8AAA8
+connectedD_yYBv2IoVfaYrQZAAA9
+a user connected
+disconnectedD_yYBv2IoVfaYrQZAAA9
+connectedTHyFL9_jsMLWx0dJAAA-
+a user connected
+disconnectedTHyFL9_jsMLWx0dJAAA-
+connectedcg6QuvTdexLKFmn8AAA_
+a user connected
+disconnectedcg6QuvTdexLKFmn8AAA_
+connected7bG4dyk4cvDlKkS8AABA
+a user connected
+disconnected7bG4dyk4cvDlKkS8AABA
+connected5odBnVHS5u7Ni5ALAABB
+a user connected
+disconnected5odBnVHS5u7Ni5ALAABB
+connectedzkXSyvzOf1WkLih-AABC
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 1000.03,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 56,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502563': '1' }
+730 730
+1000.03 0.03
+all items added
+pending
+offerid: 2926449115
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+disconnectedzkXSyvzOf1WkLih-AABC
+connectedTT0s8LHYee3WXC89AABD
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 1000.03,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 57,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502612': '1' }
+730 730
+1000.03 0.03
+all items added
+pending
+offerid: 2926450883
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 58,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502612': '1', '13587502959': '1' }
+730 730
+disconnectedTT0s8LHYee3WXC89AABD
+connectedRV0eip9m4RS0oJ3xAABE
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 59,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '13587502790': '1' }
+730 730
+0 0.03
+disconnectedRV0eip9m4RS0oJ3xAABE
+connectedm1ZgMQZGXaC-PORyAABF
+a user connected
+disconnectedm1ZgMQZGXaC-PORyAABF
+connectedlJlfXR2nC1nPVtQ4AABG
+a user connected
+disconnected5FJcRsUMhFVsobMxAAAV
+connected8iXINnVdj2SLcZ2oAABH
+a user connected
+disconnected8iXINnVdj2SLcZ2oAABH
+connectedWy0XZ0Mwv67dhQLxAABI
+a user connected
+disconnectedlJlfXR2nC1nPVtQ4AABG
+connectedc8IsFydLkDRmlHBcAABJ
+a user connected
+disconnectedWy0XZ0Mwv67dhQLxAABI
+connectedNmZl0K6xRk6MpsbmAABK
+a user connected
+disconnectedc8IsFydLkDRmlHBcAABJ
+connectedAb7x4dM9Nz6YJTmcAABL
+a user connected
+disconnectedAb7x4dM9Nz6YJTmcAABL
+connectedDWYtVan19tECDVHDAABM
+a user connected
+disconnectedDWYtVan19tECDVHDAABM
+connectedr0InoD9Q3yRIkqQ8AABN
+a user connected
+{ '1': '' }
+disconnectedr0InoD9Q3yRIkqQ8AABN
+connectedPMaszXz6VVuC8Yr5AABO
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 0,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 60,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '1882936854220568131': '1' }
+578080 578080
+0 0.3
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 100,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 61,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+0
+{ '1882936854220568131': '1' }
+578080 578080
+100 0.3
+all items added
+pending
+offerid: 2926500914
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+null
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1 }
+disconnectedPMaszXz6VVuC8Yr5AABO
+connectedg_OWWHg6Fnnk08TGAABP
+a user connected
+disconnectedg_OWWHg6Fnnk08TGAABP
+connectedqMNZzYDXKC9_RZisAABQ
+a user connected
+connectedpnj9EQtgEvFVnY_lAABR
+a user connected
+[ RowDataPacket {
+    id: 3,
+    steamid64: '76561198134682382',
+    balance: 0,
+    tradetoken: 'Yi-mHVSt' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 62,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: Hobo is not available to trade. More information will be shown to Hobo if they invite you to trade.
+disconnectedqMNZzYDXKC9_RZisAABQ
+connecteda6XLUvUDPb68oSxnAABS
+a user connected
+disconnecteda6XLUvUDPb68oSxnAABS
+connected2GOnNbScqwLKvlIsAABT
+a user connected
+disconnected2GOnNbScqwLKvlIsAABT
+connected1co8plZ_SCSS48PTAABU
+a user connected
+disconnected1co8plZ_SCSS48PTAABU
+connectedC0gITL8ze2q1UxhgAABV
+a user connected
+disconnectedC0gITL8ze2q1UxhgAABV
+connectedg_Y5MjrYMRzOy1mQAABW
+a user connected
+disconnectedg_Y5MjrYMRzOy1mQAABW
+connectedi9Ec73itumthZuyIAABX
+a user connected
+{ '1': '' }
+disconnectedNmZl0K6xRk6MpsbmAABK
+connectedqX-oZetBcYekozNYAABY
+a user connected
+disconnectedqX-oZetBcYekozNYAABY
+connected7FLQo2_Ls94vchTcAABZ
+a user connected
+disconnectedi9Ec73itumthZuyIAABX
+connectedXOQUEiDabX_6dqTqAABa
+a user connected
+{ '1': '' }
+disconnectedXOQUEiDabX_6dqTqAABa
+connected4_pYYdPi5EpZ0h24AABb
+a user connected
+{ '1': '' }
+1
+RowDataPacket {
+  id: 1,
+  url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5UoDyjg-QWCSP5VBnX8tMP3az0bS4FmusBjXEhjLHl580zhhVXw',
+  name: 'Steam gift card',
+  price: 10,
+  status: 'free',
+  code: 'FREE500' }
+ReferenceError: swal is not defined
+    at Query._callback (/root/steambot.js:89:19)
+    at Query.Sequence.end (/root/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/root/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+1
+RowDataPacket {
+  id: 1,
+  url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5UoDyjg-QWCSP5VBnX8tMP3az0bS4FmusBjXEhjLHl580zhhVXw',
+  name: 'Steam gift card',
+  price: 10,
+  status: 'sold',
+  code: 'FREE500' }
+ReferenceError: swal is not defined
+    at Query._callback (/root/steambot.js:102:15)
+    at Query.Sequence.end (/root/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Query._handleFinalResultPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/root/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/root/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/root/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/root/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/root/node_modules/mysql/lib/Connection.js:103:28)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+disconnected7FLQo2_Ls94vchTcAABZ
+connected4j_crK_PaomnYGDIAABc
+a user connected
+[ RowDataPacket {
+    id: 4,
+    steamid64: '76561198122053994',
+    balance: 100,
+    tradetoken: 'qMz' } ]
+OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 63,
+  serverStatus: 2,
+  warningCount: 0,
+  message: '',
+  protocol41: true,
+  changedRows: 0 }
+Failed to get user details for undefined
+Error: ✪ Krønøs's inventory privacy is set to "Private".  They are unable to receive trade offers.
+error: Forever detected script was killed by signal: SIGKILL
